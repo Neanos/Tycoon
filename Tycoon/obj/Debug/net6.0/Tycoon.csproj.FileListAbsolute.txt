@@ -1,0 +1,15 @@
+C:\Users\linnea.winqvist\Documents\Programmering 2\Tycoon\Tycoon\bin\Debug\net6.0\Tycoon.exe
+C:\Users\linnea.winqvist\Documents\Programmering 2\Tycoon\Tycoon\bin\Debug\net6.0\Tycoon.deps.json
+C:\Users\linnea.winqvist\Documents\Programmering 2\Tycoon\Tycoon\bin\Debug\net6.0\Tycoon.runtimeconfig.json
+C:\Users\linnea.winqvist\Documents\Programmering 2\Tycoon\Tycoon\bin\Debug\net6.0\Tycoon.dll
+C:\Users\linnea.winqvist\Documents\Programmering 2\Tycoon\Tycoon\bin\Debug\net6.0\Tycoon.pdb
+C:\Users\linnea.winqvist\Documents\Programmering 2\Tycoon\Tycoon\obj\Debug\net6.0\Tycoon.csproj.AssemblyReference.cache
+C:\Users\linnea.winqvist\Documents\Programmering 2\Tycoon\Tycoon\obj\Debug\net6.0\Tycoon.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\linnea.winqvist\Documents\Programmering 2\Tycoon\Tycoon\obj\Debug\net6.0\Tycoon.AssemblyInfoInputs.cache
+C:\Users\linnea.winqvist\Documents\Programmering 2\Tycoon\Tycoon\obj\Debug\net6.0\Tycoon.AssemblyInfo.cs
+C:\Users\linnea.winqvist\Documents\Programmering 2\Tycoon\Tycoon\obj\Debug\net6.0\Tycoon.csproj.CoreCompileInputs.cache
+C:\Users\linnea.winqvist\Documents\Programmering 2\Tycoon\Tycoon\obj\Debug\net6.0\Tycoon.dll
+C:\Users\linnea.winqvist\Documents\Programmering 2\Tycoon\Tycoon\obj\Debug\net6.0\refint\Tycoon.dll
+C:\Users\linnea.winqvist\Documents\Programmering 2\Tycoon\Tycoon\obj\Debug\net6.0\Tycoon.pdb
+C:\Users\linnea.winqvist\Documents\Programmering 2\Tycoon\Tycoon\obj\Debug\net6.0\Tycoon.genruntimeconfig.cache
+C:\Users\linnea.winqvist\Documents\Programmering 2\Tycoon\Tycoon\obj\Debug\net6.0\ref\Tycoon.dll
