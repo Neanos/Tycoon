@@ -13,6 +13,8 @@ public class Player
     int Income = 1;
     float Money = 0;
 
+    float priceMult = 1;
+
     public void Start()
     {
         incomeTimer.Elapsed += AddIncome;
@@ -21,6 +23,8 @@ public class Player
         while (true)
         {
             Console.ReadLine();
+
+
         }
     }
 
