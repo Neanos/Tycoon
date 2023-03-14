@@ -23,7 +23,7 @@ public class Player
         while (true)
         {
             Console.ReadLine();
-
+            
 
         }
     }

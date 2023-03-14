@@ -2,6 +2,15 @@ using System;
 
 public class Hive
 {
-    public int Price { get; set; }
-    
+    public float Price { get; set; }
+
+
+    public void UpPrice (){
+        while (true)
+        {
+            Price *= 1.5f;
+
+            Console.WriteLine(Price);
+        }
+    }
 }
