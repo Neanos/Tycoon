@@ -9,11 +9,11 @@ public class Player
         Enabled = true,
     };
 
+    Bee b = new();
 
     int Income = 1;
     float Money = 0;
 
-    float priceMult = 1;
 
     public void Start()
     {
@@ -23,7 +23,7 @@ public class Player
         while (true)
         {
             Console.ReadLine();
-            
+            b.Addbee(ref Money);
 
         }
     }
@@ -32,6 +32,8 @@ public class Player
     {
         Console.Clear();
         Money += Income;
-        Console.WriteLine(Money);
+        Console.WriteLine("Money:" + Money);
+        Console.WriteLine("Bee price:" + b.Price);
+        Console.WriteLine("Bee amount:" + HiveAnimal.animals.Count);
     }
 }

@@ -1,16 +1,26 @@
 using System;
 
-public class Hive
+public class HiveAnimal
 {
     public float Price { get; set; }
 
+    public static List<HiveAnimal> animals = new();
 
-    public void UpPrice (){
-        while (true)
+    public void UpPrice()
+    {
+        Price *= 1.5f;
+        Console.WriteLine(Price);
+    }
+
+
+    public void Addbee(ref float money)
+    {
+        if (money >= Price)
         {
-            Price *= 1.5f;
-
-            Console.WriteLine(Price);
+            animals.Add(new Bee());
+            money -= Price;
+            Price += 2;
         }
+
     }
 }
