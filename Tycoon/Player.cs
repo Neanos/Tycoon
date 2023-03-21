@@ -10,9 +10,11 @@ public class Player
     };
 
     Bee b = new();
+    Ant a = new();
 
     int Income = 1;
     float Money = 0;
+    int action;
 
 
     public void Start()
@@ -22,10 +24,21 @@ public class Player
 
         while (true)
         {
-            Console.ReadLine();
-            b.Addbee(ref Money);
+            if (action == 1)
+            {
+                Console.ReadLine();
+                b.Addbee(ref Money, ref Income);
 
+            }
+
+            if (action == 2)
+            {
+                Console.ReadLine();
+                a.Addant(ref Money, ref Income);
+
+            }
         }
+
     }
 
     private void AddIncome(object sender, EventArgs e)
@@ -33,7 +46,14 @@ public class Player
         Console.Clear();
         Money += Income;
         Console.WriteLine("Money:" + Money);
+        Console.WriteLine("Income per second:" + Income);
         Console.WriteLine("Bee price:" + b.Price);
+        Console.WriteLine("Ant price:" + a.Price);
         Console.WriteLine("Bee amount:" + HiveAnimal.animals.Count);
+        string actionS = Console.ReadLine();
+        bool lyckad = int.TryParse(actionS, out action);
+
+
+
     }
 }

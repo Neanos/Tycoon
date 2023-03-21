@@ -1,20 +1,19 @@
 using System;
 
-
-public class Bee : HiveAnimal
+public class Ant : HiveAnimal
 {
-    public Bee()
+     public Ant()
     {
-        Price = 10;
+        Price = 20;
     }
 
-     public void Addbee(ref float money , ref int Income)
+     public void Addant(ref float money , ref int Income)
     {
         if (money >= Price)
         {
-            animals.Add(new Bee());
+            animals.Add(new Ant());
             money -= Price;
-            Price += 2;
+            Price += 5;
             Income += 1;
             
         }
@@ -26,6 +25,4 @@ public class Bee : HiveAnimal
         }
 
     }
-
 }
-
