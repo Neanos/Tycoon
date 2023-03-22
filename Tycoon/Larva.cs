@@ -1,22 +1,23 @@
 using System;
 
+namespace Tycoon;
 
-public class Bee : Animal
+public class Larva : Animal
 {
-    public Bee()
+    public Larva()
     {
-        Price = 10;
+        Price = 30;
     }
 
-    public void Addbee(ref float money, ref int Income)
+    public void Addlarva(ref float money, ref int Income)
     {
         if (money >= Price)
         {
-            animals.Add(new Bee());
+            animals.Add(new Larva());
             money -= Price;
             Price *= 1.5f;
             Price = (float)Math.Round(Price, 2);
-            Income += 1;
+            Income += 3;
 
         }
 
@@ -27,6 +28,4 @@ public class Bee : Animal
         }
 
     }
-
 }
-

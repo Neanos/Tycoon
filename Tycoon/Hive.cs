@@ -1,10 +1,10 @@
 using System;
 
-public class HiveAnimal
+public class Animal
 {
     public float Price { get; set; }
 
-    public static List<HiveAnimal> animals = new();
+    public static List<Animal> animals = new();
 
 
 }

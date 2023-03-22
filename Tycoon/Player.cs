@@ -24,6 +24,13 @@ public class Player
 
         while (true)
         {
+            Console.Clear();
+            Console.SetCursorPosition(0, 5);
+            string actionS = Console.ReadLine();
+            bool lyckad = int.TryParse(actionS, out action);
+
+            if (!lyckad) continue;
+
             if (action == 1)
             {
                 Console.ReadLine();
@@ -43,15 +50,16 @@ public class Player
 
     private void AddIncome(object sender, EventArgs e)
     {
-        Console.Clear();
+        var prev = Console.GetCursorPosition();
+        Console.SetCursorPosition(0, 0);
         Money += Income;
         Console.WriteLine("Money:" + Money);
         Console.WriteLine("Income per second:" + Income);
         Console.WriteLine("Bee price:" + b.Price);
         Console.WriteLine("Ant price:" + a.Price);
-        Console.WriteLine("Bee amount:" + HiveAnimal.animals.Count);
-        string actionS = Console.ReadLine();
-        bool lyckad = int.TryParse(actionS, out action);
+        Console.WriteLine("Amount of animals:" + Animal.animals.Count);
+        Console.SetCursorPosition(0, 6);
+        Console.SetCursorPosition(prev.Left, prev.Top);
 
 
 
