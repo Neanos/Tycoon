@@ -3,6 +3,7 @@ using System;
 
 public class Bee : Animal
 {
+
     public Bee()
     {
         Price = 10;

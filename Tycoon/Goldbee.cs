@@ -8,7 +8,7 @@ public class Goldbee : Bee
         Price = 1000;
     }
 
-    public void Addbee(ref float money, ref int Income)
+    public void Addgoldbee(ref float money, ref int Income)
     {
         if (money >= Price)
         {

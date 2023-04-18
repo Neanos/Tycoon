@@ -12,6 +12,8 @@ public class Player
     Bee b = new();
     Goldbee gb = new();
     Ant a = new();
+    Larva l = new();
+    Goldenbeetle ge = new();
 
     int Income = 1;
     float Money = 0;
@@ -35,14 +37,35 @@ public class Player
             if (action == 1)
             {
                 Console.ReadLine();
+                b.Addbee(ref Money, ref Income);
+
+            }
+
+            
+            if (action == 2)
+            {
+                Console.ReadLine();
                 gb.Addbee(ref Money, ref Income);
 
             }
 
-            if (action == 2)
+            if (action == 3)
             {
                 Console.ReadLine();
                 a.Addant(ref Money, ref Income);
+
+            }
+
+            if (action == 4)
+            {
+                Console.ReadLine();
+                l.Addlarva(ref Money, ref Income);
+
+            }
+             if (action == 5)
+            {
+                Console.ReadLine();
+                ge.Addgoldenbeetle(ref Money, ref Income);
 
             }
         }
@@ -56,9 +79,11 @@ public class Player
         Money += Income;
         Console.WriteLine("Money:" + Money);
         Console.WriteLine("Income per second:" + Income);
-        Console.WriteLine("Bee price:" + b.Price);
-        Console.WriteLine("Ant price:" + a.Price);
-        Console.WriteLine("Goldbee price:" + gb.Price);
+        Console.WriteLine("Write the number coresponding with what you want to buy.");
+        Console.WriteLine("1) Bee price:" + b.Price);
+        Console.WriteLine("2) Goldbee price:" + gb.Price);
+        Console.WriteLine("3) Ant price:" + a.Price);
+        Console.WriteLine("4) Larva price:" + l.Price);
         Console.WriteLine("Amount of animals:" + Animal.animals.Count);
         Console.SetCursorPosition(0, 6);
         Console.SetCursorPosition(prev.Left, prev.Top);

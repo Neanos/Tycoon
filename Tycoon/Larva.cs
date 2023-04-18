@@ -1,7 +1,5 @@
 using System;
 
-namespace Tycoon;
-
 public class Larva : Animal
 {
     public Larva()
