@@ -29,11 +29,13 @@ public class Player
         {
             Console.Clear();
             Console.SetCursorPosition(0, 5);
+
+            //Fångar upp vad spelaren skriver in för handling
             string actionS = Console.ReadLine();
             bool lyckad = int.TryParse(actionS, out action);
 
             if (!lyckad) continue;
-
+            
             if (action == 1)
             {
                 Console.ReadLine();
@@ -71,7 +73,7 @@ public class Player
         }
 
     }
-
+    //skriver ut instruktioner och information för spelaren
     private void AddIncome(object sender, EventArgs e)
     {
         var prev = Console.GetCursorPosition();
@@ -85,9 +87,7 @@ public class Player
         Console.WriteLine("3) Ant price:" + a.Price);
         Console.WriteLine("4) Larva price:" + l.Price);
         Console.WriteLine("Amount of animals:" + Animal.animals.Count);
-        Console.SetCursorPosition(0, 6);
-        Console.SetCursorPosition(prev.Left, prev.Top);
-
+        
 
 
     }
